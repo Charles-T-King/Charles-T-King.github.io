@@ -1,0 +1,14 @@
+# Site settings
+title: Charles T King
+email_treasurer: charlestking.treasurer@gmail.com
+description: > # this means to ignore newlines until the next field entry
+    Interest-free loans for Millburn Township students.
+
+## The subpath of your site, e.g. /blog/
+baseurl: ""
+
+## The base hostname & protocol for your site
+url: "http://charlestking.org"
+
+# Build settings
+markdown: kramdown

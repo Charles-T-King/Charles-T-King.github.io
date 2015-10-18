@@ -1,0 +1,10 @@
+.section {
+    width: 100%;
+    background: #252525;
+    color: #fff;
+    font-size: 1em;
+}
+
+.section h2 {
+    font-size: 4em;
+}
