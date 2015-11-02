@@ -6,14 +6,28 @@ permalink: /contact/
 include_in_nav: true
 ---
 
-<div class="row">
+<div id="contact_us" class="row">
   <h3>Contact Us</h3>
-  <p>
-    For general inquiries and application information<br/>
-    <a href="mailto:charlestking.info@gmail.com">charlestking.info@gmail.com</a>
-  </p>
-  <p>
-    For current and past loan recipients:<br/>
-    <a href="mailto:charlestking.treasurer@gmail.com">charlestking.treasurer@gmail.com</a>
-  </p>
+
+  <div class="container col-md-4 col-md-offset-2">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Email</h3>
+      </div>
+      <div class="panel-body">
+        <p>
+          For general inquiries and application information:<br/>
+          <a href="mailto:charlestking.info@gmail.com">charlestking.info@gmail.com</a>
+        </p>
+        <p>
+          For current and past loan recipients:<br/>
+          <a href="mailto:charlestking.treasurer@gmail.com">charlestking.treasurer@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container col-md-4">
+    {% include mailing_address.html %}
+  </div>
 </div>
+
