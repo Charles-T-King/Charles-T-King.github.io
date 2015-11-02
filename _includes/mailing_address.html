@@ -1,6 +1,12 @@
 <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">Mailing address</h3>
+    <h3 class="panel-title">
+      {% if include.panel_title %}
+      {{ include.panel_title }}
+      {% else %}
+      Mailing address
+      {% endif %}
+    </h3>
   </div>
   <div class="panel-body">
     <p>
