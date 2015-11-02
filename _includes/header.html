@@ -17,11 +17,13 @@
         <ul class="nav navbar-nav">
           {% assign current = page.url | downcase | split: '/' %}
           {% for page in site.pages %}
-          {% if current[1] == page.id  %}
-          <li class="active"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% else %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
+            {% if page.include_in_nav %}
+              {% if current[1] == page.id  %}
+              <li class="active"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              {% else %}
+              <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              {% endif %}
+            {% endif %}
           {% endfor %}
         </ul>
       </div><!--/.nav-collapse -->
